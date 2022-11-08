@@ -83,8 +83,6 @@ document.getElementById('next').addEventListener('click', ()=>{
     }
     else{
         songIndex += 1;
-        loadTrack(track_index);
-        playTrack();
     }
     audioElement.src = `songs/${songIndex+1}.mp3`;
     masterSongName.innerText = songs[songIndex].songName;
@@ -101,8 +99,6 @@ document.getElementById('previous').addEventListener('click', ()=>{
     }
     else{
         songIndex -= 1;
-        loadTrack(track_index);
-        playTrack();
     }
     audioElement.src = `songs/${songIndex+1}.mp3`;
     masterSongName.innerText = songs[songIndex].songName;
